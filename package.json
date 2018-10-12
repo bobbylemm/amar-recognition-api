@@ -2,6 +2,9 @@
   "name": "image-recognition-api",
   "version": "1.0.0",
   "description": "this is the backend for my application",
+  "engines": {
+    "node": "8.12.0"
+  },
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
