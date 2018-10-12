@@ -76,7 +76,7 @@ app.post('/register', (req, res) => {
 })
 // this is the home endpoint, i never know wetin i go use am for
 app.get('/', (req, res) => {
-    res.send(dataBase.users);
+    res.send('it is working');
 })
 // this is the api/endpoint to register the user to the database
 app.post('/sign-in', (req, res) => {
@@ -122,6 +122,6 @@ app.post('/number-of-searches', (req,res) => {
     }
 })
 
-app.listen(4000, () => {
-    console.log('app listening on port 4000');
+app.listen(process.env.PORT || 4000, () => {
+    console.log(`app listening on port ${process.env.PORT}`);
 })
