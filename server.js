@@ -17,10 +17,8 @@ app.use(cors())
  const db = knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
-      user : 'postgres',
-      password : 'bobbi',
-      database : 'amar-recognition'
+        connectionString: process.env.DATABASE_URL,
+        ssl: true,
     }
   });
   db.select('*').from('users').then(data => {
