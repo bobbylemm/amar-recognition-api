@@ -76,7 +76,7 @@ app.post('/register', (req, res) => {
 })
 // this is the home endpoint, i never know wetin i go use am for
 app.get('/', (req, res) => {
-    res.send('it is working');
+    res.send('it is now working');
 })
 // this is the api/endpoint to register the user to the database
 app.post('/sign-in', (req, res) => {
